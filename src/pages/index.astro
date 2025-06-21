@@ -1,25 +1,9 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import '../styles/globa.css';
-import Footer from '../components/Footer.astro';
-
+import Baselayout from "../layouts/Baselayout.astro";
 const pageTitle = " 主页";
 ---
 
-<html lang=" zh-cn">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<Navigation />
-		<h1>Astro</h1>
-		<h1>陈的个人博客</h1>
-
-		<Footer />
-	</body>
-</html>
+<Baselayout pageTile={pageTitle}>
+	<h2>我超棒的博客副标题</h2>
+</Baselayout>
  

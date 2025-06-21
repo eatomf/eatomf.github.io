@@ -1,0 +1,18 @@
+---
+import Social from './Social.astro';
+const name = 'bilibili';
+const username = '402402125';
+---
+<style>
+    footer{
+        dispaly;flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+
+
+<footer>
+    <Social platform="github" username="eatomf" />
+    <a href={`https://space.${name}.com/${username}`}>{name}</a>
+</footer>
